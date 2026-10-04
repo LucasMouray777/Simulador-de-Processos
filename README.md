@@ -4,6 +4,7 @@
 Sistemas Operacionais (ADS) - 2026/2 - Prof. Guibson Krause
 
 **Integrantes:** [Lucas Moura], [Davi Mota], [Henrique da Silva]
+
 **Linguagem:** [Python 3.x]
 
 ## Execução
