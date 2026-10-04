@@ -10,7 +10,7 @@ Sistemas Operacionais (ADS) - 2026/2 - Prof. Guibson Krause
 ## Execução
 
 ```bash
-python escalonador.py
+python Simulador de Escalonamento de Processo.py
 ```
 
 O programa executa FCFS, SJF, Prioridade e Round Robin (quantum 2, variáve `QUANTUM`, código) em 3 cenários, 1 CPU e todos chegam em 0. Todo está em `resultados.txt`.
