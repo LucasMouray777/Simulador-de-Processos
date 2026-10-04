@@ -1,4 +1,4 @@
-# Simulador de escalonamento de processos
+# Simulador de Escalonamento de Processos
 
 Sistemas Operacionais (ADS) - 2026/2 - Prof. Guibson Krause
 
