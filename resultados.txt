@@ -1,0 +1,217 @@
+SIMULADOR DE ESCALONAMENTO DE PROCESSOS
+
+
+
+==========================================
+
+Executando CENÁRIO 1 (PROCESSOS CURTOS)
+
+==========================================
+
+
+
+--- FCFS ---
+
+Sequência: P1 de 0 a 3; P2 de 3 a 4; P3 de 4 a 6
+
+Processo   | CPU   | Turnaround | Espera    
+
+P1         | 3     | 3          | 0         
+
+P2         | 1     | 4          | 3         
+
+P3         | 2     | 6          | 4         
+
+Média:     |       | 4.33       | 2.33      
+
+
+
+--- SJF (Shortest Job First) ---
+
+Sequência: P2 de 0 a 1; P3 de 1 a 3; P1 de 3 a 6
+
+Processo   | CPU   | Turnaround | Espera    
+
+P1         | 3     | 6          | 3         
+
+P2         | 1     | 1          | 0         
+
+P3         | 2     | 3          | 1         
+
+Média:     |       | 3.33       | 1.33      
+
+
+
+--- Prioridade ---
+
+Sequência: P1 de 0 a 3; P2 de 3 a 4; P3 de 4 a 6
+
+Processo   | CPU   | Turnaround | Espera    
+
+P1         | 3     | 3          | 0         
+
+P2         | 1     | 4          | 3         
+
+P3         | 2     | 6          | 4         
+
+Média:     |       | 4.33       | 2.33      
+
+
+
+--- Round Robin (Quantum = 2) ---
+
+Sequência: P1 de 0 a 2; P2 de 2 a 3; P3 de 3 a 5; P1 de 5 a 6
+
+Processo   | CPU   | Turnaround | Espera    
+
+P1         | 3     | 6          | 3         
+
+P2         | 1     | 3          | 2         
+
+P3         | 2     | 5          | 3         
+
+Média:     |       | 4.67       | 2.67      
+
+
+
+==========================================
+
+Executando CENÁRIO 2 (CURTOS E LONGOS)
+
+==========================================
+
+
+
+--- FCFS ---
+
+Sequência: P1 de 0 a 8; P2 de 8 a 10; P3 de 10 a 11
+
+Processo   | CPU   | Turnaround | Espera    
+
+P1         | 8     | 8          | 0         
+
+P2         | 2     | 10         | 8         
+
+P3         | 1     | 11         | 10        
+
+Média:     |       | 9.67       | 6.00      
+
+
+
+--- SJF (Shortest Job First) ---
+
+Sequência: P3 de 0 a 1; P2 de 1 a 3; P1 de 3 a 11
+
+Processo   | CPU   | Turnaround | Espera    
+
+P1         | 8     | 11         | 3         
+
+P2         | 2     | 3          | 1         
+
+P3         | 1     | 1          | 0         
+
+Média:     |       | 5.00       | 1.33      
+
+
+
+--- Prioridade ---
+
+Sequência: P1 de 0 a 8; P2 de 8 a 10; P3 de 10 a 11
+
+Processo   | CPU   | Turnaround | Espera    
+
+P1         | 8     | 8          | 0         
+
+P2         | 2     | 10         | 8         
+
+P3         | 1     | 11         | 10        
+
+Média:     |       | 9.67       | 6.00      
+
+
+
+--- Round Robin (Quantum = 2) ---
+
+Sequência: P1 de 0 a 2; P2 de 2 a 4; P3 de 4 a 5; P1 de 5 a 7; P1 de 7 a 9; P1 de 9 a 11
+
+Processo   | CPU   | Turnaround | Espera    
+
+P1         | 8     | 11         | 3         
+
+P2         | 2     | 4          | 2         
+
+P3         | 1     | 5          | 4         
+
+Média:     |       | 6.67       | 3.00      
+
+
+
+==========================================
+
+Executando CENÁRIO 3 (PRIORIDADES DIFERENTES)
+
+==========================================
+
+
+
+--- FCFS ---
+
+Sequência: P1 de 0 a 4; P2 de 4 a 6; P3 de 6 a 9
+
+Processo   | CPU   | Turnaround | Espera    
+
+P1         | 4     | 4          | 0         
+
+P2         | 2     | 6          | 4         
+
+P3         | 3     | 9          | 6         
+
+Média:     |       | 6.33       | 3.33      
+
+
+
+--- SJF (Shortest Job First) ---
+
+Sequência: P2 de 0 a 2; P3 de 2 a 5; P1 de 5 a 9
+
+Processo   | CPU   | Turnaround | Espera    
+
+P1         | 4     | 9          | 5         
+
+P2         | 2     | 2          | 0         
+
+P3         | 3     | 5          | 2         
+
+Média:     |       | 5.33       | 2.33      
+
+
+
+--- Prioridade ---
+
+Sequência: P2 de 0 a 2; P3 de 2 a 5; P1 de 5 a 9
+
+Processo   | CPU   | Turnaround | Espera    
+
+P1         | 4     | 9          | 5         
+
+P2         | 2     | 2          | 0         
+
+P3         | 3     | 5          | 2         
+
+Média:     |       | 5.33       | 2.33      
+
+
+
+--- Round Robin (Quantum = 2) ---
+
+Sequência: P1 de 0 a 2; P2 de 2 a 4; P3 de 4 a 6; P1 de 6 a 8; P3 de 8 a 9
+
+Processo   | CPU   | Turnaround | Espera    
+
+P1         | 4     | 8          | 4         
+
+P2         | 2     | 4          | 2         
+
+P3         | 3     | 9          | 6         
+
+Média:     |       | 7.00       | 4.00
